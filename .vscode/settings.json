@@ -1,0 +1,28 @@
+{
+    "editor.formatOnSave": true,
+    "files.associations": {
+        "*.ejs": "html",
+        "arm_decoder.h": "c",
+        "cstdlib": "c",
+        "basic.h": "c",
+        "test_macros.h": "c",
+        "cunit.h": "c",
+        "stdint.h": "c",
+        "constants.h": "c",
+        "types.h": "c",
+        "shift_ops.h": "c",
+        "nl_types.h": "c",
+        "core.h": "c",
+        "thumb_decoder.h": "c",
+        "instruction_builder.h": "c",
+        "stdarg.h": "c",
+        "assert.h": "c"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "C_Cpp.clang_format_style": "file"
+}
