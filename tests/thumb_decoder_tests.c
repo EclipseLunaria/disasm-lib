@@ -2,7 +2,8 @@
 #include <CUnit/CUnit.h>
 
 #include "test_macros.h"
-#include "../internal/thumb_decoder.h"
+#include "thumb_decoder.h"
+#include "disasm.h"
 
 void test_thumb_mov_offset_r0() {
     uint16_t instruction = 0x2006;

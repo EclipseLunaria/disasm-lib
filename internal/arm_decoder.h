@@ -1,10 +1,7 @@
 #ifndef DECODER_H
 #define DECODER_H
 
-#include "constants.h"
 #include "core.h"
-#include "instruction_builder.h"
-#include "shift_ops.h"
 
 typedef int (*decoder_t)(uint32_t, char*);
 typedef uint8_t flag_t;
@@ -33,8 +30,6 @@ typedef uint8_t reg_t;
 #define IS_COPROCESSOR_DATA_TRANSFER(x) (x & 0x0E000000) == 0x0C000000
 #define IS_COPROCESSOR_DATA_OPERATION(x) (x & 0x0F000000) == 0x0E000000
 #define IS_COPROCESSOR_REGISTER_TRANSFER(x) (x & 0x0F000010) == 0x0E000010
-
-int decode_arm_instruction(uint32_t instruction, char* buffer);
 
 decoder_t select_decoder(uint32_t instruction);
 

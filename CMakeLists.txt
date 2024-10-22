@@ -6,6 +6,7 @@ set(CMAKE_C_STANDARD 11)
 
 
 include_directories(include)
+include_directories(internal)
 
 add_library(disasm_lib
 	src/arm_decoder.c

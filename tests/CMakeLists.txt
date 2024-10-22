@@ -3,8 +3,8 @@ project(DisasmLibTests C)
 
 set(CMAKE_C_STANDARD 11)
 
-include_directories(include)
-
+include_directories(../include)
+include_directories(../internal)
 add_subdirectory(lib/cunit/CUnit)
 
 add_executable(run_tests

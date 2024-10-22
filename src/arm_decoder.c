@@ -1,4 +1,7 @@
-#include "../internal/arm_decoder.h"
+#include "arm_decoder.h"
+#include "disasm.h"
+#include "instruction_builder.h"
+#include "shift_ops.h"
 
 int decode_arm_instruction(uint32_t instruction, char* buffer) {
     decoder_t decoder = select_decoder(instruction);

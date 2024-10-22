@@ -1,4 +1,5 @@
-#include "../internal/thumb_decoder.h"
+#include "thumb_decoder.h"
+#include "instruction_builder.h"
 
 int decode_thumb_instruction(uint16_t instruction, char* s) {
     if (IS_MOVE_SHIFTED_REGISTER(instruction)) {

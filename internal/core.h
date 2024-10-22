@@ -10,10 +10,8 @@
 #include <string.h>
 
 #include "constants.h"
-
+#include "types.h"
 typedef int (*decoder_t)(uint32_t, char*);
-typedef uint8_t flag_t;
-typedef uint8_t reg_t;
 
 typedef struct OpFlags {
     flag_t I : 1;

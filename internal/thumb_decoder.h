@@ -1,8 +1,7 @@
 #ifndef DECODER_THUMB_H
 #define DECODER_THUMB_H
 
-#include "core.h"
-#include "instruction_builder.h"
+#include <stdint.h>
 
 #define IS_MOVE_SHIFTED_REGISTER(x) ((x & 0xE000) == 0 && ((x >> 11) & 0b11) != 0b11)
 #define IS_ADD_SUBTRACT(x) ((x & 0xF800) == 0x1800)
@@ -24,7 +23,6 @@
 #define IS_UNCONDITIONAL_BRANCH(x) (x & 0xF800) == 0xE000
 #define IS_LONG_BRANCH_WITH_LINK(x) (x & 0xF000) == 0xF000
 
-int decode_thumb_instruction(uint16_t instruction, char* s);
 
 int decode_thumb_move_shift_register(uint16_t instruction, char* s);
 int decode_thumb_add_subtract(uint16_t instruction, char* s);
